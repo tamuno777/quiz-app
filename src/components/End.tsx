@@ -7,8 +7,14 @@ function End() {
   const {  score} = useContext(QuizContext)
 
   return (
-    <div>
-      <h1>WELDONE </h1>
+    <div className="quiz">
+      {score < questions.length/2 ? (
+        <h1>Try again abi you want me to call you olodo  </h1>
+            ):(
+        <h1> WELDONE , you have sense </h1>         
+   )}
+      
+      
       <h3>your final score is {score} / {questions.length}</h3>
     </div>
   )
